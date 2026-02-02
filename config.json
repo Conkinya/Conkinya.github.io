@@ -1,7 +1,13 @@
 {
     "title":"鹿鸣町屋",
     "subTitle":"勇气可嘉 浩瀚苍穹",
+    "homeUrl":"http://b.jiayv.wang",
     "avatarUrl":"https://avatars.githubusercontent.com/u/95989221?v=4&size=64",
     "GMEEK_VERSION":"last",
+    "onePageListNum":15,
+    "i18n":"CN",
+    "UTC":8,
+    "email":"mail@jiayv.wang",
+    "startSite":"01/14/2026",
     "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>"
 }
