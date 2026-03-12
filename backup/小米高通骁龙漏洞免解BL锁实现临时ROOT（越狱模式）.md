@@ -7,7 +7,15 @@
 > [!NOTE]
 > 重启一次会失效
 
+
+**自动化脚本：引导式一键启动（推荐）**
+[https://raibe.lanzout.com/itOxp3kewbri](https://raibe.lanzout.com/itOxp3kewbri)
+
+
+**手动进行所有操作：**
+
 在此处下载ksud及其他附件[https://raibe.lanzout.com/iKPy73ker8ud](https://raibe.lanzout.com/iKPy73ker8ud)，也可以前往[https://github.com/tiann/KernelSU](https://github.com/tiann/KernelSU)官方仓库获取
+
 
 1. **在FB界面中进行：**
 `fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive` ##设置SELinux宽容，每次开机都要执行
