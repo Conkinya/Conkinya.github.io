@@ -7,6 +7,8 @@
 > [!NOTE]
 > 重启一次会失效
 
+在此处下载ksud及其他附件[https://raibe.lanzout.com/iKPy73ker8ud](https://raibe.lanzout.com/iKPy73ker8ud)，也可以前往[https://github.com/tiann/KernelSU](https://github.com/tiann/KernelSU)官方仓库获取
+
 1. **在FB界面中进行：**
 `fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive` ##设置SELinux宽容，每次开机都要执行
 `fastboot continue`##在FASTBOOT中直接引导系统，每次开机都要执行
