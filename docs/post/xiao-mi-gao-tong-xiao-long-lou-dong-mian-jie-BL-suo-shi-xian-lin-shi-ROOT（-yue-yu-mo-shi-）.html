@@ -13,6 +13,12 @@
 <meta name="description" content="> [!IMPORTANT]
 > 设备必须是小米红米，芯片必须是高通骁龙8系，且未更新2月补丁
 
+> [!WARNING]
+> 严禁修改系统分区，严谨使用可修改系统分区的模块等，笔者不为任何人的任何过失负责
+
+> [!NOTE]
+> 重启一次会失效
+
 1. **在FB界面中进行：**
 `fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive` ##设置SELinux宽容
 `fastboot continue`##在FASTBOOT中直接引导系统
@@ -24,11 +30,20 @@
 至此成功
 
 `adb shell su -c setenforce 1`##恢复SELinux严格
-。">
+
+
+全身而退的办法：
+清空`data\adb`和`data\local\tmp`中的相关内容即可完全复原设备。">
 <meta property="og:title" content="小米高通骁龙漏洞免解BL锁实现临时ROOT（越狱模式）">
 <meta property="og:description" content="> [!IMPORTANT]
 > 设备必须是小米红米，芯片必须是高通骁龙8系，且未更新2月补丁
 
+> [!WARNING]
+> 严禁修改系统分区，严谨使用可修改系统分区的模块等，笔者不为任何人的任何过失负责
+
+> [!NOTE]
+> 重启一次会失效
+
 1. **在FB界面中进行：**
 `fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive` ##设置SELinux宽容
 `fastboot continue`##在FASTBOOT中直接引导系统
@@ -40,7 +55,10 @@
 至此成功
 
 `adb shell su -c setenforce 1`##恢复SELinux严格
-。">
+
+
+全身而退的办法：
+清空`data\adb`和`data\local\tmp`中的相关内容即可完全复原设备。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://b.jiayv.wang/post/xiao-mi-gao-tong-xiao-long-lou-dong-mian-jie-BL-suo-shi-xian-lin-shi-ROOT%EF%BC%88-yue-yu-mo-shi-%EF%BC%89.html">
 <meta property="og:image" content="https://pic.jiayv.wang/file/shit/1770022438673_1766420097264.webp">
@@ -71,7 +89,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 
 </style>
-<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-important {border-left-color:var(--borderColor-done-emphasis, var(--color-done-emphasis));background-color:var(--color-done-subtle);}.markdown-alert.markdown-alert-important .markdown-alert-title {color: var(--fgColor-done,var(--color-done-fg));}</style>
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style><style>.markdown-alert.markdown-alert-important {border-left-color:var(--borderColor-done-emphasis, var(--color-done-emphasis));background-color:var(--color-done-subtle);}.markdown-alert.markdown-alert-important .markdown-alert-title {color: var(--fgColor-done,var(--color-done-fg));}</style><style>.markdown-alert.markdown-alert-warning {border-left-color:var(--borderColor-attention-emphasis, var(--color-attention-emphasis));background-color:var(--color-attention-subtle);}.markdown-alert.markdown-alert-warning .markdown-alert-title {color: var(--fgColor-attention,var(--color-attention-fg));}</style>
 
 
 
@@ -103,6 +121,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><div class="markdown-alert markdown-alert-important"><p class="markdown-alert-title"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p><p>设备必须是小米红米，芯片必须是高通骁龙8系，且未更新2月补丁</p>
 </div>
+<div class="markdown-alert markdown-alert-warning"><p class="markdown-alert-title"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Warning</p><p>严禁修改系统分区，严谨使用可修改系统分区的模块等，笔者不为任何人的任何过失负责</p>
+</div>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>重启一次会失效</p>
+</div>
 <ol>
 <li>
 <p><strong>在FB界面中进行：</strong><br>
@@ -117,7 +139,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 至此成功</p>
 </li>
 </ol>
-<p><code class="notranslate">adb shell su -c setenforce 1</code>##恢复SELinux严格</p></div>
+<p><code class="notranslate">adb shell su -c setenforce 1</code>##恢复SELinux严格</p>
+<p>全身而退的办法：<br>
+清空<code class="notranslate">data\adb</code>和<code class="notranslate">data\local\tmp</code>中的相关内容即可完全复原设备。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
