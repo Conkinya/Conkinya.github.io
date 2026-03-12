@@ -5,6 +5,10 @@ A：自己对照
 Android安全更新版本：低于2026年2月1日
 系统版本：澎湃OS2、3
 
+**Q：文件在哪**
+A：𝕭𝖊𝖑𝖚𝖆通过QQ文件闪传分享了【KernelSU.apk】
+链接：https://qfile.qq.com/q/8UWMIkbi8w
+
 **Q：无法将fastboot识别为……（命令爆红）**
 A：自行安装驱动，如下
 
