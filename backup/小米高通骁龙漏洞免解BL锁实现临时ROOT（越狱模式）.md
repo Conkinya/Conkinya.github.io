@@ -20,5 +20,8 @@
 `adb shell su -c setenforce 1`##恢复SELinux严格
 
 
-全身而退的办法：
+**全身而退的办法**：
 清空`data\adb`和`data\local\tmp`中的相关内容即可完全复原设备。
+
+侵权请致邮件至mail@jiayv.wang，我将妥善处理此事。
+教程来自网络整合，主要来自酷安@上善若水，在此一并致谢。
