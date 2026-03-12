@@ -8,16 +8,16 @@
 > 重启一次会失效
 
 1. **在FB界面中进行：**
-`fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive` ##设置SELinux宽容
-`fastboot continue`##在FASTBOOT中直接引导系统
+`fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive` ##设置SELinux宽容，每次开机都要执行
+`fastboot continue`##在FASTBOOT中直接引导系统，每次开机都要执行
 
 2. **在系统中进行：（依次）**
-`adb push ksud /data/local/tmp/`
-`adb shell chmod 777 /data/local/tmp/ksud`
-`adb shell service call miui.mqsas.IMQSNative 21 i32 1 s16 "/data/local/tmp/ksud" i32 1 s16 'late-load' s16 '/sdcard/ksulog.txt' i32 60` ##漏洞提权
+`adb push ksud /data/local/tmp/`##只需执行一次
+`adb shell chmod 777 /data/local/tmp/ksud`##只需执行一次
+`adb shell service call miui.mqsas.IMQSNative 21 i32 1 s16 "/data/local/tmp/ksud" i32 1 s16 'late-load' s16 '/sdcard/ksulog.txt' i32 60` ##漏洞提权，每次开机都要执行
 至此成功
 
-`adb shell su -c setenforce 1`##恢复SELinux严格
+`adb shell su -c setenforce 1`##恢复SELinux严格，每次开机都要执行，可选（建议）
 
 
 **全身而退的办法**：
