@@ -22,7 +22,7 @@ fastboot continue ##在FASTBOOT中直接引导系统，每次开机都要执行
 
 Q：怎么操作？
 A：请看视频
-`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116215641019858&bvid=BV1vpckzhEdH&cid=36646879270&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`
+`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116215641019858&bvid=BV1vpckzhEdH&cid=36646879270&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
 
 **Q：一键脚本在哪？**
 A：暂无，马上就有了
