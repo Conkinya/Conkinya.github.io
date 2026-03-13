@@ -3,6 +3,9 @@
 > [!WARNING]
 > 严禁修改系统分区、严禁使用修改系统分区的App或模块、严禁尝试用越狱ksu转magisk
 
+> [!NOTE]
+> 侵权请致邮件至mail@jiayv.wang，我将妥善处理此事。
+教程来自网络整合，主要来自酷安@上善若水、@xingguangcuican，在此一并致谢。
 
 **Q：我的小米XXX可以吗？**
 A：自己对照
