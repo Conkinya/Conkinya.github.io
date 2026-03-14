@@ -61,4 +61,4 @@ A：不会
 **2.waiting for any device？**
 执行`fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive`后，提示< waiting for any device >怎么办 进fastboot了
 
-**重新安装adb驱动**
+**已知办法之一：重新安装adb驱动**
