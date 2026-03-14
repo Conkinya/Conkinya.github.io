@@ -15,8 +15,11 @@ Android安全更新版本：低于2026年2月1日（不含）
 系统版本：澎湃OS2、3，澎湃OS1不可以
 
 **Q：文件在哪**
-A：𝕭𝖊𝖑𝖚𝖆通过QQ文件闪传分享了【KernelSU.apk】
+A：新版视频演示版本【KernelSU.apk】
 链接：https://qfile.qq.com/q/8UWMIkbi8w
+**如果失效代表时效性很差，请自行前往以下地址搜寻。**
+KernelSU：https://github.com/tiann/KernelSU
+MKSU：https://t.me/mksu_ci
 
 **Q：无法将fastboot识别为……（命令爆红）**
 A：自行安装驱动，如下
@@ -55,4 +58,7 @@ A：不会
 **1.需要打开开发者选项中的OEM解锁**
 `Gmeek-html<img src="https://pic.jiayv.wang/file/shit/1773373791698_1773373757532.webp" alt="1773373757532.png" width=100% />`
 
+**2.waiting for any device？**
+执行`fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive`后，提示< waiting for any device >怎么办 进fastboot了
 
+**重新安装adb驱动**

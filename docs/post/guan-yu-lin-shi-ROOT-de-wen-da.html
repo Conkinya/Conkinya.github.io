@@ -98,8 +98,11 @@ A：自己对照<br>
 Android安全更新版本：低于2026年2月1日（不含）<br>
 系统版本：澎湃OS2、3，澎湃OS1不可以</p>
 <p><strong>Q：文件在哪</strong><br>
-A：𝕭𝖊𝖑𝖚𝖆通过QQ文件闪传分享了【KernelSU.apk】<br>
-链接：<a href="https://qfile.qq.com/q/8UWMIkbi8w" rel="nofollow">https://qfile.qq.com/q/8UWMIkbi8w</a></p>
+A：新版视频演示版本【KernelSU.apk】<br>
+链接：<a href="https://qfile.qq.com/q/8UWMIkbi8w" rel="nofollow">https://qfile.qq.com/q/8UWMIkbi8w</a><br>
+<strong>如果失效代表时效性很差，请自行前往以下地址搜寻。</strong><br>
+KernelSU：<a href="https://github.com/tiann/KernelSU">https://github.com/tiann/KernelSU</a><br>
+MKSU：<a href="https://t.me/mksu_ci" rel="nofollow">https://t.me/mksu_ci</a></p>
 <p><strong>Q：无法将fastboot识别为……（命令爆红）</strong><br>
 A：自行安装驱动，如下</p>
 <p><strong>Q：柚坛工具箱在哪下？怎么用</strong><br>
@@ -127,7 +130,10 @@ A：不会</p>
 <p>如果您遇到了这些情况：</p>
 </blockquote>
 <p><strong>1.需要打开开发者选项中的OEM解锁</strong><br>
-<img src="https://pic.jiayv.wang/file/shit/1773373791698_1773373757532.webp" alt="1773373757532.png" width=100% /></p></div>
+<img src="https://pic.jiayv.wang/file/shit/1773373791698_1773373757532.webp" alt="1773373757532.png" width=100% /></p>
+<p><strong>2.waiting for any device？</strong><br>
+执行<code class="notranslate">fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive</code>后，提示&lt; waiting for any device &gt;怎么办 进fastboot了</p>
+<p><strong>重新安装adb驱动</strong></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
@@ -189,7 +195,7 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 cmButton=document.getElementById("cmButton");
     span=document.createElement("span");
     span.setAttribute("class","Counter");
-    span.innerHTML="3";
+    span.innerHTML="4";
     cmButton.appendChild(span);
 
 
