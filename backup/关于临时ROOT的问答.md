@@ -62,3 +62,8 @@ A：不会
 执行`fastboot oem set-gpu-preemption 0 androidboot.selinux=permissive`后，提示< waiting for any device >怎么办 进fastboot了
 
 **已知办法之一：重新安装adb驱动**
+
+**3.系统自动重启到了Recovery并有红字？**
+进入宽容模式后 系统会运行一会 然后直接重启到Recovery 接着底部红字提示`system crashed multiple times rescue patry activated`
+
+因为ksu的自动越狱 ksu检测到宽容就会开始越狱 越狱完成要重启系统框架 短时间系统框架多次重启系统就会觉得自己死了进rec
