@@ -7,6 +7,7 @@
 > [!NOTE]
 > 本篇教程相对复杂，已有最新，推荐您查看最新教程【新】小米高通骁龙漏洞免解BL锁实现临时ROOT（越狱模式） https://www.bilibili.com/video/BV1vpckzhEdH/
 
+**常见疑问**：https://b.jiayv.wang/post/guan-yu-lin-shi-ROOT-de-wen-da.html
 
 **自动化脚本：引导式一键启动（推荐）**
 [https://raibe.lanzout.com/itOxp3kewbri](https://raibe.lanzout.com/itOxp3kewbri)
